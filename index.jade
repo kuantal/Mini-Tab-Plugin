@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Title
+        script(src='http://code.jquery.com/jquery-2.2.0.min.js', type='text/javascript')
+        script(src='tabber.js', type='text/javascript')
+        link(rel='stylesheet', href='style.css')
+        script(type='text/javascript').
+            $( document ).ready(function() {
+                $("#tabbed").iytabs();
+            });
+    body
+        // Mini Tab Plugin
+        #tabbed
+            // Tabs Start
+            ul#mBtns
+                li.actTabCls Tab 1
+                li Tab 2
+            // Tabs /
+            // Tabs Content Start
+            ul#mTabs
+                li.visibleElement Tab Content 1
+                li Tab Content 2
+            // Tabs Content /
+

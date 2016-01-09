@@ -14,17 +14,27 @@ body {
 }
 #tabbed #mBtns li {
   display: inline-block;
-  border: 1px solid #ababab;
+  border: 1px solid #eee;
   border-bottom: 0;
   cursor: pointer;
-  padding: 2px 10px;
+  padding: 2px 30px;
+  -webkit-transition: all 200ms cubic-bezier(0.185, 0.54, 0.355, 1);
+  -moz-transition: all 200ms cubic-bezier(0.185, 0.54, 0.355, 1);
+  -ms-transition: all 200ms cubic-bezier(0.185, 0.54, 0.355, 1);
+  -o-transition: all 200ms cubic-bezier(0.185, 0.54, 0.355, 1);
+  transition: all 200ms cubic-bezier(0.185, 0.54, 0.355, 1); /* custom */
+}
+#tabbed #mBtns li.actTabCls {
+  background-color: #ff6347;
+  color: #fff;
+  font-weight: bold;
 }
 #tabbed #mBtns li:hover {
   background-color: #aaa;
 }
 #tabbed #mTabs {
   display: block;
-  border: 1px solid #ababab;
+  border: 1px solid #eee;
 }
 #tabbed #mTabs li {
   display: none;

@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="http://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="tabber.js" type="text/javascript"></script>
     <link rel="stylesheet" href="style.css">
-
     <script type="text/javascript">
-        $( document ).ready(function() {
-            $("#tabbed").iytabs();
-        });
-
+      $( document ).ready(function() {
+          $("#tabbed").iytabs();
+      });
     </script>
-</head>
-<body>
-
-<div id="tabbed">
-    <ul id="mBtns">
-        <li>Tab 1</li>
+  </head>
+  <body>
+    <!-- Mini Tab Plugin-->
+    <div id="tabbed">
+      <!-- Tabs Start-->
+      <ul id="mBtns">
+        <li class="actTabCls">Tab 1</li>
         <li>Tab 2</li>
-    </ul>
-
-    <ul id="mTabs">
+      </ul>
+      <!-- Tabs /-->
+      <!-- Tabs Content Start-->
+      <ul id="mTabs">
         <li class="visibleElement">Tab Content 1</li>
         <li>Tab Content 2</li>
-    </ul>
-</div>
-
-</body>
+      </ul>
+      <!-- Tabs Content /-->
+    </div>
+  </body>
 </html>

@@ -1,5 +1,7 @@
-borderColor = #ababab
+borderColor = #eee
 tabHoverBgColor  = #aaa;
+activeTabClass  = tomato
+activeTabColor = white
 
 
 body
@@ -17,7 +19,16 @@ body
       border 1px solid borderColor
       border-bottom 0
       cursor pointer
-      padding 2px 10px
+      padding 2px 30px
+      -webkit-transition: all 200ms cubic-bezier(0.185, 0.540, 0.355, 1.000);
+      -moz-transition: all 200ms cubic-bezier(0.185, 0.540, 0.355, 1.000);
+      -ms-transition: all 200ms cubic-bezier(0.185, 0.540, 0.355, 1.000);
+      -o-transition: all 200ms cubic-bezier(0.185, 0.540, 0.355, 1.000);
+      transition: all 200ms cubic-bezier(0.185, 0.540, 0.355, 1.000); /* custom */
+      &.actTabCls
+        background-color activeTabClass
+        color activeTabColor
+        font-weight bold
       &:hover
         background-color:tabHoverBgColor
   #mTabs
