@@ -1,0 +1,30 @@
+borderColor = #ababab
+tabHoverBgColor  = #aaa;
+
+
+body
+  font-family:"Open Sans Light"
+#tabbed
+  display block
+  ul
+    margin  0
+    padding 0
+    list-style none
+  #mBtns
+    display block
+    li
+      display inline-block
+      border 1px solid borderColor
+      border-bottom 0
+      cursor pointer
+      padding 2px 10px
+      &:hover
+        background-color:tabHoverBgColor
+  #mTabs
+    display block
+    border 1px solid borderColor
+    li
+      display none
+      padding 10px
+      &.visibleElement
+        display block

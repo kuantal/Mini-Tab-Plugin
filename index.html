@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="tabber.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $("#tabbed").iytabs();
+        });
+
+    </script>
+</head>
+<body>
+
+<div id="tabbed">
+    <ul id="mBtns">
+        <li>Tab 1</li>
+        <li>Tab 2</li>
+    </ul>
+
+    <ul id="mTabs">
+        <li class="visibleElement">Tab Content 1</li>
+        <li>Tab Content 2</li>
+    </ul>
+</div>
+
+</body>
+</html>

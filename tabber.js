@@ -18,14 +18,14 @@
 
 (function ($) {
 
-    jQuery.fn.ihtabs = function (options) {
+    jQuery.fn.iytabs = function (options) {
         //Varsayılan Ayarlar
         var defaults = {
-            target: this, // Hedef Tab Grubu
-            actCls: "actTabCls", // Aktif tab için Class
+            target: this, // Target Element
+            actCls: "actTabCls", // Active tab Class
             tabsBtn: "#mBtns",
-            tabClass: "#mTabs", // Tablar icin classlar
-            actSekmeCls: "visibleElement" // Aktif tab için Class
+            tabClass: "#mTabs", // Tabs Id Or Class
+            actSekmeCls: "visibleElement" // Active Tab visibil Class
         };
 
         var settings = $.extend({}, defaults, options);
@@ -34,7 +34,6 @@
 
         tabsBtn.click(function () {
             tabsBtn.removeClass("actTabCls");
-
             $(this).addClass(settings.actCls);
             tabs.removeClass(settings.actSekmeCls).eq($(this).index()).addClass(settings.actSekmeCls);
         });
