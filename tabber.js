@@ -1,17 +1,18 @@
 /// MINI TAB PLUGIN
 // @quantal
+// ilker YILMAZ
 /* USAGE :  $("selector).ihtabs();
 
  <div id="adaylar">
- <ul id="mBtns">
- <li>GÜNCEL</li>
- <li>BELDELERE GÖRE</li>
- </ul>
+     <ul id="mBtns">
+         <li>Tab 1</li>
+         <li>Tab 2</li>
+     </ul>
 
- <ul id="mTabs">
- <li class="visibleElement">GÜNCEL TAB</li>
- <li>BELDELERE GÖRE TAB</li>
- </ul>
+     <ul id="mTabs">
+         <li class="visibleElement">Tab Content 1</li>
+         <li>Tab Content 2</li>
+     </ul>
  </div>
  */
 
