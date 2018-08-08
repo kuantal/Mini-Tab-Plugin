@@ -33,7 +33,7 @@
         var tabs = $(settings.target).children(settings.tabClass).children("li");
 
         tabsBtn.click(function () {
-            tabsBtn.removeClass("actTabCls");
+            tabsBtn.removeClass(settings.actCls);
             $(this).addClass(settings.actCls);
             tabs.removeClass(settings.actSekmeCls).eq($(this).index()).addClass(settings.actSekmeCls);
         });
