@@ -1,9 +1,9 @@
 /// MINI TAB PLUGIN
 // @quantal
 // ilker YILMAZ
-/* USAGE :  $("selector).ihtabs();
+/* USAGE :  $("#container).tabs();
 
- <div id="adaylar">
+ <div id="container">
      <ul id="mBtns">
          <li>Tab 1</li>
          <li>Tab 2</li>
@@ -18,14 +18,14 @@
 
 (function ($) {
 
-    jQuery.fn.iytabs = function (options) {
+    jQuery.fn.tabs = function (options) {
         //Varsayılan Ayarlar
         var defaults = {
             target: this, // Target Element
             actCls: "actTabCls", // Active tab Class
-            tabsBtn: "#mBtns",
+            tabsBtn: "#mBtns", // Button Id or Class
             tabClass: "#mTabs", // Tabs Id Or Class
-            actSekmeCls: "visibleElement" // Active Tab visibil Class
+            actSekmeCls: "visibleElement" // Active Tab visibility Class
         };
 
         var settings = $.extend({}, defaults, options);
